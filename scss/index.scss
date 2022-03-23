@@ -136,6 +136,10 @@ img {
   display: grid;
 }
 
+.main {
+  overflow: hidden;
+}
+
 // ===== HEADER SECTION =====
 .header {
   position: fixed;
@@ -218,5 +222,52 @@ img {
   .show-menu {
     opacity: 1;
     transform: scaleY(1);
+  }
+}
+
+// ===== HOME SECTION =====
+.home {
+  padding: 7rem 0 3rem;
+
+  &__container {
+    gap: 3rem;
+    justify-items: center;
+  }
+
+  &__data {
+    text-align: center;
+  }
+
+  &__title {
+    font-size: 26px;
+    line-height: $leading-title;
+    margin-bottom: 1rem;
+  }
+
+  &__text {
+    font-size: 15px;
+    color: $grey-color;
+    line-height: $leading-text;
+    margin-bottom: 2rem;
+  }
+
+  &__buttons {
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+
+    &-learn {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 15px;
+      font-weight: $font-medium;
+      color: $black-color;
+    }
+
+    &-icon {
+      font-size: 1.5rem;
+      color: $yellow-color;
+    }
   }
 }
