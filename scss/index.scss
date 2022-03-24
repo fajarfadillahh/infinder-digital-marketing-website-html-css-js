@@ -392,7 +392,7 @@ img {
 // ===== EMAIL SECTION =====
 .email {
   &__container {
-    gap: 2rem;
+    gap: 3rem;
     padding: 5rem 2.5rem 0;
     background-color: rgba($color: #08a87b, $alpha: 0.1);
     border-radius: 2rem;
@@ -419,5 +419,62 @@ img {
 
   &__img {
     justify-self: center;
+  }
+}
+
+// ===== TEAM SECTION =====
+.team {
+  &__container {
+    gap: 3rem;
+  }
+
+  &__subtitle {
+    color: $yellow-color;
+  }
+
+  &__group {
+    display: grid;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  &__item {
+    width: 230px;
+    display: grid;
+    gap: 2rem;
+
+    &-img {
+      width: 100px;
+      justify-self: center;
+    }
+
+    &-data {
+      text-align: center;
+    }
+
+    &-name {
+      font-size: 18px;
+      font-weight: $font-bold;
+      color: $black-color;
+      margin-bottom: 10px;
+    }
+
+    &-profession {
+      font-size: 15px;
+      color: $grey-color;
+      margin-bottom: 1rem;
+    }
+
+    &-socials {
+      display: inline-flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    &-link {
+      display: inline-flex;
+      font-size: 1.5rem;
+      color: $green-color;
+    }
   }
 }
