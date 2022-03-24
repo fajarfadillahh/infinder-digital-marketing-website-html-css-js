@@ -340,8 +340,11 @@ img {
     gap: 3rem;
   }
 
+  &__data {
+    text-align: center;
+  }
+
   &__title {
-    text-align: left;
     margin-bottom: 1rem;
   }
 
@@ -354,6 +357,7 @@ img {
 
   &__group {
     gap: 1rem;
+    justify-self: center;
     margin-bottom: 2rem;
   }
 
@@ -377,5 +381,43 @@ img {
 
   &__button {
     display: inline-flex;
+    justify-self: center;
+  }
+
+  &__img {
+    justify-self: center;
+  }
+}
+
+// ===== EMAIL SECTION =====
+.email {
+  &__container {
+    gap: 2rem;
+    padding: 5rem 2.5rem 0;
+    background-color: rgba($color: #08a87b, $alpha: 0.1);
+    border-radius: 2rem;
+  }
+
+  &__data {
+    text-align: center;
+  }
+
+  &__title {
+    margin-bottom: 1rem;
+  }
+
+  &__text {
+    font-size: 15px;
+    color: $grey-color;
+    margin-bottom: 2rem;
+  }
+
+  &__button {
+    display: inline-flex;
+    background-color: $yellow-color;
+  }
+
+  &__img {
+    justify-self: center;
   }
 }
