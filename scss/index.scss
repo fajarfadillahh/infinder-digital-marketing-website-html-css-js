@@ -333,3 +333,49 @@ img {
     }
   }
 }
+
+// ===== FEATURE SECTION =====
+.feature {
+  &__container {
+    gap: 3rem;
+  }
+
+  &__title {
+    text-align: left;
+    margin-bottom: 1rem;
+  }
+
+  &__text {
+    font-size: 15px;
+    color: $grey-color;
+    line-height: $leading-text;
+    margin-bottom: 1rem;
+  }
+
+  &__group {
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  &__item {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    color: $grey-color;
+
+    &-icon {
+      display: inline-flex;
+      align-items: center;
+      font-size: 1rem;
+      color: $white-color;
+      padding: 0.3rem;
+      background-color: $green-color;
+      border-radius: 50%;
+    }
+  }
+
+  &__button {
+    display: inline-flex;
+  }
+}
