@@ -478,3 +478,52 @@ img {
     }
   }
 }
+
+// ===== NEWSLETTER SECTION =====
+.newsletter {
+  &__container {
+    gap: 2rem;
+  }
+
+  &__data {
+    text-align: center;
+  }
+
+  &__subtitle {
+    color: $red-color;
+  }
+
+  &__title {
+    margin-bottom: 1rem;
+  }
+
+  &__text {
+    font-size: 15px;
+    color: $grey-color;
+    line-height: $leading-text;
+  }
+
+  &__direction {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    overflow: hidden;
+
+    &-input {
+      display: flex;
+      text-align: center;
+      font-size: 15px;
+      font-weight: $font-medium;
+      color: $black-color;
+      padding: 1rem;
+      border: 1.5px solid rgba($color: #72747a, $alpha: 0.5);
+      border-radius: 1rem;
+
+      &::placeholder {
+        font-size: 15px;
+        font-weight: $font-medium;
+        color: $grey-color;
+      }
+    }
+  }
+}
