@@ -527,3 +527,68 @@ img {
     }
   }
 }
+
+// ===== FOOTER SECTION =====
+.footer {
+  &__container {
+    gap: 4rem;
+  }
+
+  &__group {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+  }
+
+  &__item {
+    &-title {
+      font-size: 18px;
+      font-weight: $font-semibold;
+      color: $black-color;
+      margin-bottom: 1.5rem;
+    }
+
+    &-text {
+      font-size: 15px;
+      color: $grey-color;
+      margin: 10px 0 1.5rem;
+      line-height: $leading-text;
+    }
+
+    &-socials {
+      display: inline-flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    &-icon {
+      display: inline-flex;
+      font-size: 1.5rem;
+      color: $green-color;
+    }
+
+    &-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+    }
+
+    &-link {
+      font-size: 15px;
+      color: $grey-color;
+
+      &:hover {
+        color: $green-color;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__copy {
+    padding-top: 3rem;
+    border-top: 1.5px solid rgba($color: #72747a, $alpha: 0.3);
+    font-size: 15px;
+    color: $grey-color;
+    text-align: center;
+  }
+}
