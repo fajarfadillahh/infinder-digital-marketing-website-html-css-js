@@ -796,3 +796,21 @@ img {
     justify-items: center;
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .section {
+    padding: 8rem 0 4rem;
+  }
+
+  .home {
+    padding-bottom: 4rem;
+  }
+
+  .service__group {
+    grid-template-columns: repeat(3, max-content);
+  }
+
+  .footer__container {
+    gap: 8rem;
+  }
+}
