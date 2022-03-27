@@ -154,6 +154,10 @@ img {
   z-index: $z-fixed;
   transition: $transition-400;
 
+  &.sticky-header {
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  }
+
   &__container {
     height: 6rem;
     display: flex;
