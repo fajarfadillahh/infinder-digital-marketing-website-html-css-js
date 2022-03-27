@@ -621,9 +621,16 @@ img {
     font-size: 36px;
   }
 
+  .service__item-title,
+  .team__item-name,
+  .footer__item-title {
+    font-size: 20px;
+  }
+
   .header__link,
   .home__text,
   .home__buttons-learn,
+  .service__item-text,
   .feature__text,
   .feature__item,
   .email__text,
@@ -640,5 +647,65 @@ img {
   .email__data {
     width: 420px;
     justify-self: center;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .section-title {
+    font-size: 36px;
+  }
+
+  .header {
+    &__container {
+      position: relative;
+      height: 7rem;
+    }
+
+    &__menu {
+      display: flex;
+      align-items: center;
+    }
+
+    &__list {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      flex-direction: row;
+    }
+
+    &__button {
+      margin-top: 0;
+    }
+
+    &__toggle {
+      display: none;
+    }
+  }
+
+  .home__data,
+  .feature__data,
+  .email__data,
+  .newsletter__data,
+  .newsletter__direction {
+    width: 520px;
+  }
+
+  .home__title {
+    font-size: 42px;
+  }
+
+  .service__group,
+  .team__group {
+    grid-template-columns: repeat(2, max-content);
+  }
+
+  .newsletter__direction {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .newsletter__direction-input {
+    width: 100%;
+    text-align: left;
   }
 }
