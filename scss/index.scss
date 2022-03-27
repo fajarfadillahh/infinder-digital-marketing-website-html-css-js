@@ -592,3 +592,14 @@ img {
     text-align: center;
   }
 }
+
+// ===== MEDIA QUERIES =====
+@media screen and (min-width: 480px) {
+  .home__data,
+  .feature__data,
+  .newsletter__data,
+  .newsletter__direction {
+    width: 420px;
+    justify-self: center;
+  }
+}
